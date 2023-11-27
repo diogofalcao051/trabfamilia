@@ -1,0 +1,165 @@
+@charset "utf-8";
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+h1{
+    display: flex;
+    background-color: #005480;
+}
+
+h1 a{
+    /* padding: 1em; */
+    margin-left: 3em;
+    margin-top: 2em;
+    color: #e7e247;
+
+}
+
+h1 img{
+    width: 150px;
+    height: 150px;
+    /* margin-top: 2em; */
+    margin-left: 1em;
+}
+
+p{
+    border: solid;
+    border-color: #e7e247;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+footer{
+    background-color: #005480;
+}
+   
+
+
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+
+
+.container {
+    width: 100%;
+    max-width: 760px;
+    margin: 0% auto;
+    padding: 0 15px;
+    /* animation: surgir 1s ease;
+    animation-timeline: view();
+    animation-range: cover 0 cover 40%; */
+}
+
+
+
+section.modulo.content {
+    padding: 40px 0;
+    background: #005480;
+  
+
+}
+
+section.modulo.parallax {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+section.modulo.parallax h1 {
+    color: #252525;
+    text-align: center;
+    font-size: 80px;
+    text-transform: uppercase;
+    z-index: 50;
+    text-shadow: 10px 10px 10px #ffffff;
+}
+
+section.modulo.parallax:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    z-index: 8;
+    position: absolute;
+    background: linear-gradient(to bottom, #00000000 0, rgba(0, 0, 0, 0) 50%, #000000 100%);
+}
+
+
+section.modulo.parallax-1 {
+    background-image: url(https://cdn.pixabay.com/photo/2023/06/27/10/51/pier-8091934_1280.jpg)
+}
+
+section.modulo.parallax-2 {
+    background-image: url(https://i.ytimg.com/vi/L6sAaT2Nhj0/maxresdefault.jpg)
+}
+
+section.modulo.parallax-3 {
+    background-image: url(F9fY0gOW0AENJX7.jfif);
+}
+
+@keyframes surgir {
+    from {
+        opacity: 0;
+        translate: -100vw 0;
+    }
+
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+footer {
+    text-align: center;
+background-color: #9b7e46;
+
+
+
+}
+
+
+
+
+@media all and (max-width: 820px) {
+
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    section.modulo p {
+        margin-bottom: 15px;
+        text-align: center;
+        font-size: 1em;
+        padding-right: 30px;
+    }
+
+    section.modulo.parallax h1 {
+        color: #f4f2ed;
+        text-align: center;
+        font-size: 2em;
+        text-transform: uppercase;
+        z-index: 50;
+        text-shadow: 5px 5px 5px #000000;
+    }
+}
